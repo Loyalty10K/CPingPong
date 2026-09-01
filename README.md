@@ -2,6 +2,8 @@
 
 Ping Pong game made with C and raylib.
 
+![Gameplay screenshot](image.png)
+
 ## About this project
 
 I'm learning C from scratch, and this is one of my practice projects along the way. I'm using it to test out what I've learned so far (variables, loops, if statements, functions) combined with raylib for graphics. This isn't professional code, just a learning exercise and a fun way to see concepts working on screen instead of just in the terminal.
