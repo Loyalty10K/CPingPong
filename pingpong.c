@@ -3,10 +3,10 @@
 #include <time.h>
 
 int main() {
-    int widthwindow = 1500;
-    int heightwindow = 800;
-    InitWindow(widthwindow, heightwindow, "First Game");
-    SetTargetFPS(200);
+    int widthwindow = 1500; // our window width
+    int heightwindow = 800; // window height
+    InitWindow(widthwindow, heightwindow, "First Game"); 
+    SetTargetFPS(200); // basically game speed
 
     float a = 1400;
     float b = 350;
@@ -17,6 +17,7 @@ int main() {
     float speed = 3;
     int directionX = 1;
     int directionY = 1;
+    //defined everything, just the base stuff
 
     while (!WindowShouldClose()) {
 
@@ -24,7 +25,7 @@ int main() {
         if (IsKeyDown(KEY_DOWN))  b += 5;
         if (IsKeyDown(KEY_W)) d -= 5;
         if (IsKeyDown(KEY_S)) d += 5;
-
+        //checking users input
         circlex += speed * directionX;
         circley += speed * directionY;
         if (circley <= 0 || circley >= heightwindow) {
@@ -39,7 +40,7 @@ int main() {
         if (circlex - 15 <= c + 30 && circlex >= c + 30 && circley >= d && circley <= d + 150) {
             directionX = directionX * -1;
         }
-
+        //ball physics
         BeginDrawing();
         ClearBackground(RAYWHITE);
         DrawRectangle(a, b, 30, 150, RED);
